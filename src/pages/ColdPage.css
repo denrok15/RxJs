@@ -1,0 +1,19 @@
+.subscriber-avatar {
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  width: 54px;
+  height: 54px;
+  font: 24px monospace;
+  color: #c3a5ed;
+  border: 1px solid #71608e;
+  background: #b495ec13;
+}
+.avatar-B {
+  color: #96cfbd;
+  border-color: #497365;
+  background: #94d9ba12;
+}
+.subscriber-avatar ~ .actions {
+  margin: 21px 0;
+}

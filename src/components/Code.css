@@ -1,0 +1,35 @@
+.code {
+  background: #131722;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 22px;
+  color: #a8b4cb;
+  font-size: 11px;
+  line-height: 1.9;
+  overflow: auto;
+  margin: 0 0 18px;
+  tab-size: 2;
+}
+@media (max-width: 580px) {
+  .code {
+    font-size: 10px;
+  }
+}
+
+.code-details {
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.code-details summary {
+  cursor: pointer;
+  padding: 8px 0;
+  width: fit-content;
+}
+.code-details summary:hover {
+  color: var(--purple);
+}
+.code-details .code {
+  margin-top: 10px;
+  margin-bottom: 0;
+}

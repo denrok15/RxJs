@@ -1,0 +1,19 @@
+.inline-state {
+  display: flex;
+  gap: 30px;
+  padding-top: 22px;
+  color: #8691a8;
+  font-size: 11px;
+}
+.inline-state b {
+  font-family: monospace;
+  font-weight: 400;
+  color: #c4b1e7;
+  margin-left: 12px;
+}
+@media (max-width: 580px) {
+  .inline-state {
+    flex-direction: column;
+    gap: 13px;
+  }
+}

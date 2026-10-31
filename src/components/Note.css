@@ -1,0 +1,28 @@
+.note {
+  display: flex;
+  gap: 12px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #929bb1;
+  background: #9986cd0a;
+  border: 1px solid #9986cd22;
+  border-radius: 7px;
+  padding: 14px 17px;
+  margin-bottom: 18px;
+}
+.note > span {
+  border: 1px solid #89769c;
+  color: #b4a3d5;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font: 10px Georgia;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+.note code {
+  color: #c8b5e8;
+  font-size: 10px;
+}

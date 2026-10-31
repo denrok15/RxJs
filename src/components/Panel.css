@@ -1,0 +1,35 @@
+.panel {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #191d28;
+  padding: 21px 22px;
+  margin-bottom: 18px;
+  min-width: 0;
+}
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 19px;
+}
+.panel h2 {
+  font-size: 13px;
+  font-weight: 550;
+  margin: 0;
+}
+.eyebrow {
+  font: 9px monospace;
+  letter-spacing: 1px;
+  color: #727c92;
+}
+@media (min-width: 1550px) {
+  .panel {
+    padding: 24px;
+  }
+}
+@media (max-width: 850px) {
+  .panel {
+    padding: 18px;
+  }
+}

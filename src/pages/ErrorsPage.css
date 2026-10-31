@@ -1,0 +1,38 @@
+.scenario-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+.scenario-grid .panel {
+  display: flex;
+  flex-direction: column;
+}
+.scenario-code {
+  color: #b8a1e0;
+  font-size: 11px;
+}
+.scenario-grid p {
+  color: #8d97ad;
+  font-size: 11px;
+  line-height: 1.9;
+  flex: 1;
+}
+.scenario-grid .button {
+  align-self: flex-start;
+}
+@media (max-width: 1150px) {
+  .scenario-grid {
+    grid-template-columns: 1fr;
+  }
+  .scenario-grid .panel {
+    margin-bottom: 0;
+  }
+  .scenario-grid {
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 580px) {
+  .scenario-grid {
+    gap: 12px;
+  }
+}

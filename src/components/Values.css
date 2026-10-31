@@ -1,0 +1,32 @@
+.values {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
+  min-height: 33px;
+}
+.values span {
+  font: 12px monospace;
+  color: #91dec0;
+  background: #24473866;
+  border: 1px solid #355a49;
+  border-radius: 5px;
+  min-width: 35px;
+  text-align: center;
+  padding: 8px 10px;
+}
+.values small {
+  font-size: 11px;
+  color: #67748d;
+}
+.values.rejected span {
+  color: #e0a1a4;
+  background: #4b2e3466;
+  border-color: #62404b;
+}
+.panel > .values:last-child {
+  margin-top: 6px;
+}
+.panel > .send-value + .values {
+  margin-top: 22px;
+}

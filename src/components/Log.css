@@ -1,0 +1,124 @@
+.log-row {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+}
+.log-panel {
+  padding: 0;
+  overflow: hidden;
+}
+.log-panel .panel-heading {
+  padding: 19px 22px;
+  margin: 0;
+}
+.log-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.count {
+  font: 9px monospace;
+  color: #929cb1;
+  border: 1px solid #3b4050;
+  background: #232837;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+.text-button {
+  background: none;
+  border: 0;
+  font-size: 10px;
+  color: #9199ae;
+}
+.text-button:hover {
+  color: #c4b3ed;
+}
+.log-head,
+.log-row {
+  display: grid;
+  grid-template-columns: 122px 165px minmax(0, 1fr);
+  gap: 12px;
+  padding: 10px 22px;
+}
+.log-head {
+  border-block: 1px solid var(--border);
+  background: #151a24;
+  font: 8px monospace;
+  letter-spacing: 1.2px;
+  color: #68748b;
+}
+.log-body {
+  max-height: 330px;
+  min-height: 175px;
+  overflow: auto;
+  background: #141923;
+  scrollbar-color: #3b3f53 #171b26;
+  scrollbar-width: thin;
+}
+.log-row {
+  font-size: 10px;
+  line-height: 1.7;
+  border-bottom: 1px solid #252b384f;
+  overflow-wrap: anywhere;
+  color: #9ca7bb;
+}
+.log-time {
+  color: #68758c;
+  white-space: nowrap;
+}
+.log-time b {
+  font-weight: 400;
+  color: #48566e;
+  margin-right: 9px;
+}
+.log-stage {
+  color: #b6a5d7;
+}
+.log-row.next .log-stage {
+  color: #8cc2ab;
+}
+.log-row.reject .log-stage,
+.log-row.error .log-stage {
+  color: #e8a4ac;
+}
+.log-row.complete .log-stage {
+  color: #a6c9e8;
+}
+.log-row.teardown .log-stage {
+  color: #debd84;
+}
+.log-empty {
+  text-align: center;
+  padding: 23px 15px;
+  color: #77829b;
+}
+.log-empty p {
+  font-size: 11px;
+  margin: 13px 0 7px;
+}
+@media (max-width: 1150px) {
+  .log-head,
+  .log-row {
+    grid-template-columns: 110px 125px minmax(0, 1fr);
+  }
+}
+@media (max-width: 850px) {
+  .log-panel {
+    padding: 0;
+  }
+}
+@media (max-width: 580px) {
+  .log-head,
+  .log-row {
+    grid-template-columns: 68px 87px minmax(0, 1fr);
+    gap: 7px;
+    padding-inline: 12px;
+  }
+  .log-time {
+    font-size: 8px;
+  }
+  .log-time b {
+    display: block;
+  }
+  .log-row {
+    font-size: 9px;
+  }
+}
